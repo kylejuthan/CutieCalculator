@@ -25,28 +25,37 @@ public class CutieCalculator {
             }
         }
         System.out.println();
-
-           /* if ((userName == "Buchita") || (userName == "buchita") || (userName == "Buch") || (userName == "buch") || (userName == "Goob") || (userName == "goob")) {
-                System.out.println("Cutie");
-
-                System.out.println();
-                System.out.println("Have you been rizzed up by the Rizzler Kyle? (Enter Yes or No)");
-                String rizzStatus= sc.nextLine();
-
-                if ((rizzStatus == "Yes") || (rizzStatus == "yes") || (rizzStatus == "Y") || (rizzStatus == "y")) {
-                    System.out.println("You're damn right, you've been rizzed up goob whether you like it or not.");
-                }
-                else {
-                    // loop here asking same question
-                    System.out.println("Stop lying!");
-                }
-            } else {
-                // block of code to be executed if the condition is false
-            }*/
-
         if (userName.equalsIgnoreCase("Buchita") || userName.equalsIgnoreCase("Buch") || userName.equalsIgnoreCase("Goob")) {
             //System.out.println("Cutie");
-            System.out.println(" _____________________________\n" +
+            String cuteResult = " _____________________________\n" +
+                "|  _________________________  |\n" +
+                "| |You are a certified cutie| |\n" +
+                "| |_________________________| |\n" +
+                "|      ___ ___ ___   ___      |\n" +
+                "|     | 7 | 8 | 9 | | + |     |\n" +
+                "|     |___|___|___| |___|     |\n" +
+                "|     | 4 | 5 | 6 | | - |     |\n" +
+                "|     |___|___|___| |___|     |\n" +
+                "|     | 1 | 2 | 3 | | x |     |\n" +
+                "|     |___|___|___| |___|     |\n" +
+                "|     | . | 0 | = | | / |     |\n" +
+                "|     |___|___|___| |___|     |\n" +
+                "|_____________________________|\n";
+        char[] charArr = cuteResult.toCharArray();
+
+        for(int i=0; i<=charArr.length-1;i++)
+        {
+
+            System.out.print(charArr[i]);
+            try
+            {
+                Thread.sleep(1);
+            } catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+            /*System.out.println(" _____________________________\n" +
                     "|  _________________________  |\n" +
                     "| |You are a certified cutie| |\n" +
                     "| |_________________________| |\n" +
@@ -59,28 +68,67 @@ public class CutieCalculator {
                     "|     |___|___|___| |___|     |\n" +
                     "|     | . | 0 | = | | / |     |\n" +
                     "|     |___|___|___| |___|     |\n" +
-                    "|_____________________________|");
+                    "|_____________________________|");*/
 
-            /*String message = "You are a certified cutie";
+            while (userName.equalsIgnoreCase("Buchita") || userName.equalsIgnoreCase("Buch") || userName.equalsIgnoreCase("Goob")) {
+                System.out.println();
+                System.out.println("Have you been rizzed up by the Rizzler Kyle? (Enter Yes or No)");
+                String rizzStatus = sc.nextLine();
 
-            for (int i = 0; i < message.length(); i++) {
-                char ch = message.charAt(i);
-                System.out.print(ch);
-                Thread.sleep(100); // Sleep 100ms (0.1 seconds)
-            }*/
-
-            System.out.println();
-            System.out.println("Have you been rizzed up by the Rizzler Kyle? (Enter Yes or No)");
-            String rizzStatus = sc.nextLine();
-
-            if (rizzStatus.equalsIgnoreCase("Yes") || rizzStatus.equalsIgnoreCase("Y")) {
-                System.out.println("You're damn right, you've been rizzed up goob whether you like it or not.");
-
-            } else {
-
-
+                if (rizzStatus.equalsIgnoreCase("Yes") || rizzStatus.equalsIgnoreCase("Y")) {
+                    System.out.println();
+                    System.out.println("Good answer. You've been rizzed up goob whether you like it or not 😘");
+                    break;
+                } else {
+                    System.out.println();
+                    System.out.println("Stop lying!🙄");
+                }
             }
+        } else {
+            String notCuteResult = " _____________________________\n" +
+                    "|  _________________________  |\n" +
+                    "| | You are not a cutie. :( | |\n" +
+                    "| |_________________________| |\n" +
+                    "|      ___ ___ ___   ___      |\n" +
+                    "|     | 7 | 8 | 9 | | + |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|     | 4 | 5 | 6 | | - |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|     | 1 | 2 | 3 | | x |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|     | . | 0 | = | | / |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|_____________________________|\n";
+            char[] charArr = notCuteResult.toCharArray();
 
+            for(int i=0; i<=charArr.length-1;i++)
+            {
+
+                System.out.print(charArr[i]);
+                try
+                {
+                    Thread.sleep(1);
+                } catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
+            }
         }
+            /*System.out.println(" _____________________________\n" +
+                    "|  _________________________  |\n" +
+                    "| | You are not a cutie. :( | |\n" +
+                    "| |_________________________| |\n" +
+                    "|      ___ ___ ___   ___      |\n" +
+                    "|     | 7 | 8 | 9 | | + |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|     | 4 | 5 | 6 | | - |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|     | 1 | 2 | 3 | | x |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|     | . | 0 | = | | / |     |\n" +
+                    "|     |___|___|___| |___|     |\n" +
+                    "|_____________________________|");
+        }*/
     }
 }
+
